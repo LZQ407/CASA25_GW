@@ -2,27 +2,27 @@
 
 ## Project Summary
 
-Fill in the sections below to provide a brief summary of your project. Each section should have no more than 100 words. Do not edit any of the headings.
+This project visualizes seasonal habitat use of the migratory White-naped Crane across East Asia. By integrating GPS tracking data with environmental indicators such as vegetation, temperature, pollution, and water availability, the application identifies critical hotspots and evaluates their ecological quality. Designed for conservation practitioners, the tool supports science-based advocacy by enabling users to generate evidence that informs policy and habitat protection. Built on Google Earth Engine, it offers an accessible, interactive interface to explore temporal patterns and argue for conservation priorities at regional and national levels.
 
 ### Problem Statement
 
-What is the problem you’re trying to address using this application?
+Migratory species like the White-naped Crane (Grus vipio) rely on multiple seasonal habitats across East Asia for survival. However, many of these areas—especially temporary stopover sites—are under threat from agricultural expansion, urban development, and climate variability (Wilcove and Wikelski, 2008). These habitats often fall outside existing protected areas and are ecologically important only during specific time windows. Because such spatiotemporal dynamics are difficult to observe and document, conservationists face challenges in presenting compelling scientific evidence that justifies habitat protection (Yanco et al., 2024; Runge et al., 2014).
 
 ### End User
 
-Who are you building this application for? How does it address a need this community has?
+Our application is designed for conservationists and environmental NGOs who seek to protect migratory bird habitats. These users often struggle to communicate the ecological significance of dynamic, short-lived stopover areas to government bodies. By combining animal movement data with seasonal environmental indicators, our tool enables users to extract spatial evidence that supports conservation claims. This helps bridge the gap between scientific data and policy advocacy, empowering practitioners to argue more effectively for new or extended habitat protections (Rose et al., 2018).
 
 ### Data
 
-What data are you using?
+We integrate multi-source remote sensing and ecological tracking datasets. White-naped Crane movement data comes from the “White-naped Crane Mongolia WSCC” study (Batbayar et al., 2024), which provides high-resolution GPS data via the Movebank Repository. Environmental conditions are assessed using MODIS NDVI for vegetation, NOAA CFSR for temperature, Sentinel-5P for pollution levels, and GLCF for inland water extent. Together, these datasets allow us to quantify the environmental quality of crane habitats across space and time (Turner et al., 2003).
 
 ### Methodology
 
-How are you using this data to address the problem?
+We identify high-density crane hotspots using kernel-based smoothing of GPS point data. These areas are then evaluated using seasonal environmental metrics that correspond to ecological niche components such as vegetation availability, thermal conditions, water presence, and air quality (Yanco et al., 2024). The application allows users to select regions, filter by administrative or ecological criteria, and retrieve environmental summaries for any identified hotspot. This supports ecological comparisons across space, time, and protection status, making it easier to assess threats and justify targeted conservation actions.
 
 ### Interface
 
-How does your application's interface work to address the needs of your end user?
+The application is built on Google Earth Engine, offering a user-friendly interface for non-programmer conservation professionals. Users can explore interactive maps, filter hotspots by administrative boundaries or nature reserve proximity, and view detailed statistics by clicking on regions. A date slider enables seasonal comparison, while visualizations of NDVI, temperature, and pollution provide ecological context. By translating complex spatiotemporal data into actionable insights, the interface bridges the gap between ecological research and policy impact (Rose et al., 2018; Collen et al., 2013). The tool is intended to enhance the ability of users to advocate effectively for the protection of high-priority crane habitats.
 
 ## The Application
 
@@ -51,3 +51,12 @@ You can include images:
 ![Pixelwise T-Test, 2018](images/beirut_change_2020.jpg)
 
 and math: $$ \Large t = {\frac{\overline{x_1}-\overline{x_2}} {\sqrt{\frac{s^2_1}{n_1} + \frac{s^2_2}{n_2}}}} $$
+
+### Refrences
+Batbayar, N., Galtbalt, B., Natsagdorj, T., et al. (2024) White-naped crane Mongolia WSCC. Movebank Data Repository. Available at: https://doi.org/10.5441/001/1.600.
+Collen, B., Pettorelli, N., Baillie, J.E.M., et al. (2013) “Biodiversity Monitoring and Conservation: Bridging the Gaps Between Global Commitment and Local Action.” In Collen, B., Pettorelli, N., Baillie, J.E.M., et al. (eds.) Biodiversity Monitoring and Conservation. 1st ed. Wiley. pp. 1–16. doi:10.1002/9781118490747.ch1.
+Rose, D.C., Sutherland, W.J., Amano, T., et al. (2018) The major barriers to evidence‐informed conservation policy and possible solutions. Conservation Letters, 11 (5): e12564. doi:10.1111/conl.12564.
+Runge, C.A., Martin, T.G., Possingham, H.P., et al. (2014) Conserving mobile species. Frontiers in Ecology and the Environment, 12 (7): 395–402. doi:10.1890/130237.
+Turner, W., Spector, S., Gardiner, N., et al. (2003) Remote sensing for biodiversity science and conservation. Trends in ecology & evolution, 18 (6): 306–314.
+Wilcove, D.S. and Wikelski, M. (2008) Going, going, gone: is animal migration disappearing. PLoS biology, 6 (7): e188.
+
