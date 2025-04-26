@@ -14,7 +14,7 @@ Our application is designed for conservationists and environmental NGOs who seek
 
 ### Data
 
-We integrate multi-source remote sensing and ecological tracking datasets. White-naped Crane movement data comes from the “White-naped Crane Mongolia WSCC” study (Batbayar et al., 2024), which provides high-resolution GPS data via the Movebank Repository. Environmental conditions are assessed using MODIS NDVI for vegetation, NOAA CFSR for temperature, Sentinel-5P for pollution levels, and GLCF for inland water extent. Together, these datasets allow us to quantify the environmental quality of crane habitats across space and time (Turner et al., 2003).
+We integrate multi-source remote sensing and ecological tracking datasets. White-naped Crane movement data comes from the “White-naped Crane Mongolia WSCC” study (Batbayar et al., 2024), which provides high-resolution GPS data via the Movebank Repository. Environmental conditions are assessed using MODIS NDVI for vegetation, ERA5 for temperature, Sentinel-5P for pollution levels, and GLCF for inland water extent. Together, these datasets allow us to quantify the environmental quality of crane habitats across space and time (Turner et al., 2003).
 
 ### Methodology
 
